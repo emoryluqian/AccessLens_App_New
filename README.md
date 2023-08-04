@@ -1,13 +1,13 @@
 # AccessLens_App
-<strong>An inaccessibility detection mobile application. </strong>
+<strong>An inaccessibility detection mobile application. Developed with the Unity IDE </strong>
 
-## Requirements
-    "Unity IDE"
+## Requirements  
     "Editor Version": "2022.3.4f1",
-    "com.unity.barracuda": "1.0.3",
-    "com.unity.xr.arfoundation": "4.0.8",
-    "com.unity.xr.arkit": "4.0.8",
-    "com.unity.xr.arcore": "4.0.8",
+    "AR Foundation": "5.0.7",
+    "Apple ARKit XR Plugin": "5.0.7",
+    "Google ARCore XR Plugin" : "5.0.6",
+    "Magic Leap XR Plugin" : "7.0.0", 
+    "OpenXR Plugin": "1.8.1"
 
 ## Designed AccessLens Views
 1. Detection View
