@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{3E418B1E-68C2-0A5D-F883-57F90B5A4B64}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Maneger_WelcomeScene.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Maneger_WelcomeScene.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AccessLens_App" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Maneger_WelcomeScene.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="130e3cf7-852e-4465-a6f9-d4cebd57ec28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
