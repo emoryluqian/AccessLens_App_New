@@ -1,7 +1,11 @@
 ﻿<Properties StartupConfiguration="{3E418B1E-68C2-0A5D-F883-57F90B5A4B64}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Maneger_WelcomeScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Manager_DetectionScene.cs">
     <Files>
       <File FileName="Assets/Scripts/Maneger_WelcomeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Manager_ResultScene.cs" Line="1" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.xr.arfoundation@5.0.7/Runtime/ARFoundation/ARPlaneManager.cs" Line="1" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.xr.arfoundation@5.0.7/Runtime/ARFoundation/ARSessionOrigin.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Manager_DetectionScene.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +13,7 @@
           <Node name="AccessLens_App" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Maneger_WelcomeScene.cs" selected="True" />
+                <Node name="Manager_DetectionScene.cs" selected="True" />
               </Node>
             </Node>
           </Node>
