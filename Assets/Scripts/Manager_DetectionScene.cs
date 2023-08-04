@@ -1,48 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.IO;
 using System;
 
 public class Manager_DetectionScene : MonoBehaviour
 {
-    public static GameObject Panel_Album;
-    public static GameObject Panel_Preview;
+    public GameObject Panel_Album;
+    public GameObject Panel_Preview;
+    public GameObject Panel_Loading;
 
     public static HashSet<string> InputImages;
     public static DirectoryInfo ResourcesDirect => new DirectoryInfo($@"Assets/Resources");
     public const string ImagePathsFile = "Input Image Paths.txt";
     public static string ImagePathsFilePath => $@"{ResourcesDirect.FullName}\{ImagePathsFile}";
-    
 
-    public static void InitializeDetectionScene()
+    public static bool IsResultRecieved = false;
+
+    public void Start()
     {
         DisableAlbumPanel();
         DisablePreviewPanel();
         InitializeInputImagePaths();
     }
 
-    public static void EnableAlbumPanel()
+    #region Panel Management
+
+    public void EnableAlbumPanel()
     {
         Panel_Album.SetActive(true);
     }
 
-    public static void DisableAlbumPanel()
+    public void DisableAlbumPanel()
     {
-        Panel_Preview.SetActive(false);
+        Panel_Album.SetActive(false);
     }
 
-    public static void EnablePreviewPanel()
+    public void EnablePreviewPanel()
     {
         Panel_Preview.SetActive(true);
     }
 
-    public static void DisablePreviewPanel()
+    public void DisablePreviewPanel()
     {
         Panel_Preview.SetActive(false);
     }
 
-    private static void InitializeInputImagePaths()
+    public void EnableLoadingPanel()
+    {
+        Panel_Loading.SetActive(true);
+    }
+
+    public void DisableLoadingPanel()
+    {
+        Panel_Loading.SetActive(false);
+    }
+
+    #endregion
+
+    #region I/O Management
+
+    public void Confirm()
+    {
+        OutputInputImagePaths(); // Output the .txt file for backend to use
+        Navigate_ResultScene();
+    }
+
+    public void Navigate_ResultScene()
+    {
+        
+        //while (!IsResultRecieved)
+        //{
+        //    RotateAnimation();
+        //}
+
+        SceneManager.LoadScene("Scene_Result", LoadSceneMode.Single);
+    }
+
+    private void RotateAnimation()
+    {
+        float rotationSpeed = 30f;
+        float rotationAmount = rotationSpeed * Time.deltaTime;
+        transform.Rotate(new Vector3(0, 0, rotationAmount));
+    }
+
+    private void InitializeInputImagePaths()
     {
         InputImages = new HashSet<string>();
         if (File.Exists(ImagePathsFilePath))
@@ -50,6 +93,7 @@ public class Manager_DetectionScene : MonoBehaviour
             File.Delete(ImagePathsFilePath);
         }
         File.Create(ImagePathsFile);
+        IsResultRecieved = false;
     }
 
     public void AddInputImages(string imgPath)
@@ -80,4 +124,6 @@ public class Manager_DetectionScene : MonoBehaviour
         }
         fileStream.Close();
     }
+
+    #endregion
 }
