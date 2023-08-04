@@ -35,8 +35,8 @@
 4. Icon location: AccessLens_App/Assets/Icon
 
 ## Scene Organazation
-1. Logical manager: each scene has a game object that acts like a logical manager, and the logical manager is links to a script `.cs`file  that manages all logics and codes associate with this scene
-2. By default, all codes links to Unity project uses the programming language `C#`, so all file ends with `.cs`
+1. Logical manager: each scene has a game object that acts like a logical manager, and the logical manager is links to a script `.cs` file  that manages all logics and codes associate with this scene
+2. By default, all codes links to Unity project uses the programming language `C#`, so all script file ends with `.cs`
 
 ## Naming Convention
 * `Property_Name` or `Role_Object`
