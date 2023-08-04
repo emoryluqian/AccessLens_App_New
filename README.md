@@ -33,6 +33,22 @@
 2. Scripts location: AccessLens_App/Assets/Scripts
 3. Resource location: AccessLens_App/Assets/Resource
 4. Icon location: AccessLens_App/Assets/Icon
+5. Input Image Paths File Location: AccessLens_App/Assets/Resource/Input Image Paths.txt
+6. Dictionary File Location: AccessLens_App/Assets/Resource/\<file name\>
+7. Backend Code Folder Location: (Will discuss later)
+
+## Frontend to Backend Communication
+*  At the end of the `Detection` process, frontend will output a `.txt` textfile `Input Image Paths.txt`
+*  To nativage to this file, please refer to previous section `Project Organization` point `5`
+*  The `Input Image Paths.txt` file contains all path of the images that users want to upload <strong>at a single run</strong>.
+*  Each file path takes an <strong>individual line</strong>, so the please use `Readline()` or any similar feature to read the file. 
+*  Each new run clears out the file.
+*  Only <strong>distinct</strong> image paths are written to this file, so don't worry about repetitive image paths.
+
+## Backend to Frontend Communication
+*  Backend should send out a signal to the Frontend to indicate the successful return of result
+*  Maybe a newly added `.json` file can be a good signal
+*  If use `.json` file as the signal, please clears out or delete the file at every <strong>new run</strong>. 
 
 ## Scene Organazation
 1. Logical manager: each scene has a game object that acts like a logical manager, and the logical manager is links to a script `.cs` file  that manages all logics and codes associate with this scene
