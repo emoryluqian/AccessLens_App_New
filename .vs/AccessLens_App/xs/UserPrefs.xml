@@ -1,29 +1,15 @@
 ﻿<Properties StartupConfiguration="{3E418B1E-68C2-0A5D-F883-57F90B5A4B64}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Manager_DetectionScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Manager_ResultScene.cs">
     <Files>
-      <File FileName="Assets/Scripts/Manager_ResultScene.cs" Line="1" Column="1" />
-      <File FileName="Library/PackageCache/com.unity.xr.arfoundation@5.0.7/Runtime/ARFoundation/ARPlaneManager.cs" Line="1" Column="1" />
-      <File FileName="Library/PackageCache/com.unity.xr.arfoundation@5.0.7/Runtime/ARFoundation/ARSessionOrigin.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Manager_DetectionScene.cs" Line="26" Column="6" />
-      <File FileName="Assets/Scripts/Manager_WelcomeScene.cs" Line="11" Column="38" />
+      <File FileName="Assets/Scripts/Manager_ResultScene.cs" Line="18" Column="24" />
+      <File FileName="Library/PackageCache/com.unity.xr.arfoundation@5.0.7/Runtime/ARFoundation/ARPlaneManager.cs" />
+      <File FileName="Assets/Scripts/Manager_DetectionScene.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/Manager_WelcomeScene.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AccessLens_App" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Manager_DetectionScene.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="130e3cf7-852e-4465-a6f9-d4cebd57ec28" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="603df6b3-18ac-4344-bf16-660258b44eaf" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
